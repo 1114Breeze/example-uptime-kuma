@@ -3,7 +3,7 @@ FROM docker.io/alpine as BUILDER
 
 RUN apk add --no-cache curl tar
 
-RUN curl -L https://github.com/benbjohnson/litestream/releases/download/v0.5.15/litestream-0.5.15-linux-amd64.tar.gz -o litestream.tar.gz && \
+RUN curl -L https://github.com/benbjohnson/litestream/releases/download/v0.5.15/litestream-0.5.15-linux-x86_64.tar.gz -o litestream.tar.gz && \
     tar xzvf litestream.tar.gz
 
 # Main image
