@@ -7,7 +7,7 @@ RUN curl -L https://github.com/benbjohnson/litestream/releases/download/v0.5.15/
     tar xzvf litestream.tar.gz
 
 # Main image
-FROM docker.io/louislam/uptime-kuma:2 as KUMA
+FROM docker.io/louislam/uptime-kuma as KUMA
 
 ARG UPTIME_KUMA_PORT=3001
 
